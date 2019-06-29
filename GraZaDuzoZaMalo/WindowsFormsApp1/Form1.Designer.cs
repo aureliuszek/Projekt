@@ -102,6 +102,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(49, 20);
             this.textBox3.TabIndex = 5;
+            this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // button2
@@ -128,7 +129,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(54, 247);
+            this.label4.Location = new System.Drawing.Point(97, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 20);
             this.label4.TabIndex = 8;
@@ -176,7 +177,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.hp_full;
-            this.pictureBox3.Location = new System.Drawing.Point(211, 240);
+            this.pictureBox3.Location = new System.Drawing.Point(91, 243);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(27, 27);
             this.pictureBox3.TabIndex = 15;
@@ -185,7 +186,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.hp_full;
-            this.pictureBox2.Location = new System.Drawing.Point(178, 240);
+            this.pictureBox2.Location = new System.Drawing.Point(58, 243);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(27, 27);
             this.pictureBox2.TabIndex = 14;
@@ -194,7 +195,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.hp_full;
-            this.pictureBox1.Location = new System.Drawing.Point(145, 240);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 243);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(27, 27);
             this.pictureBox1.TabIndex = 13;

@@ -153,6 +153,14 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                button2_Click(sender, e);
+            }
+        }
+
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
