@@ -48,9 +48,9 @@ namespace WindowsFormsApp1
                 button2.Enabled = true;
                 textBox3.Enabled = true;
                 bledy = 0;
-                pictureBox1.Image = Properties.Resources.hp_full;
-                pictureBox2.Image = Properties.Resources.hp_full;
-                pictureBox3.Image = Properties.Resources.hp_full;
+                PBSerce1.Image = Properties.Resources.hp_full;
+                PBSerce2.Image = Properties.Resources.hp_full;
+                PBSerce3.Image = Properties.Resources.hp_full;
                 label4.Text = "";
                 label5.Text = "Gra rozpoczęta ! ";
                 label6.Text = "Czas : ";
@@ -71,16 +71,16 @@ namespace WindowsFormsApp1
            switch (b)
             {
                 case 1:
-                    pictureBox3.Image = Properties.Resources.hp_half;
+                    PBSerce3.Image = Properties.Resources.hp_half;
                         break;
                 case 2:
-                    pictureBox3.Image = Properties.Resources.hp_none;
+                    PBSerce3.Image = Properties.Resources.hp_none;
                     break;
-                case 3: pictureBox2.Image = Properties.Resources.hp_half; break;
-                case 4: pictureBox2.Image = Properties.Resources.hp_none; break;
-                case 5 : pictureBox1.Image = Properties.Resources.hp_half; break;
+                case 3: PBSerce2.Image = Properties.Resources.hp_half; break;
+                case 4: PBSerce2.Image = Properties.Resources.hp_none; break;
+                case 5 : PBSerce1.Image = Properties.Resources.hp_half; break;
                 case 6 :
-                    pictureBox1.Image = Properties.Resources.hp_none;
+                    PBSerce1.Image = Properties.Resources.hp_none;
                     timer1.Enabled = false;
                     button1.Enabled = true;
                     textBox1.Enabled = true;
@@ -89,9 +89,9 @@ namespace WindowsFormsApp1
                     textBox3.Enabled = false;
                     Form2 newForm = new Form2();
                     newForm.label1.Text = "Niestety, przegrałeś!";
-                    newForm.pictureBox1.Image = pictureBox1.Image;
-                    newForm.pictureBox2.Image = pictureBox2.Image;
-                    newForm.pictureBox3.Image = pictureBox3.Image;
+                    newForm.pictureBox1.Image = PBSerce1.Image;
+                    newForm.pictureBox2.Image = PBSerce2.Image;
+                    newForm.pictureBox3.Image = PBSerce3.Image;
                     newForm.label2.Text = "  Czas : " + time.ToString("mm':'ss':'f");
                     newForm.BackColor = Color.Red;
                     newForm.ShowDialog();
@@ -118,9 +118,9 @@ namespace WindowsFormsApp1
                     Form2 newForm = new Form2();
                     newForm.label1.Text = "Gratulacje, wygrałeś!";
                     newForm.BackColor = Color.Green;
-                    newForm.pictureBox1.Image = pictureBox1.Image;
-                    newForm.pictureBox2.Image = pictureBox2.Image;
-                    newForm.pictureBox3.Image = pictureBox3.Image;
+                    newForm.pictureBox1.Image = PBSerce1.Image;
+                    newForm.pictureBox2.Image = PBSerce2.Image;
+                    newForm.pictureBox3.Image = PBSerce3.Image;
                     newForm.label2.Text = "  Czas : " + time.ToString("mm':'ss':'f");
                     newForm.ShowDialog();
 
