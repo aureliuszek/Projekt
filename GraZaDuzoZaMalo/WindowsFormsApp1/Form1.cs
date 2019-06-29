@@ -58,6 +58,8 @@ namespace WindowsFormsApp1
                 timer = 0;
                 proby = 0;
                 timer1.Enabled = true;
+                textBox3.Text = "";
+                textBox3.Focus();
             } catch
             {
                 MessageBox.Show("Nieprawidłowe liczby !");
@@ -86,7 +88,7 @@ namespace WindowsFormsApp1
                     button2.Enabled = false;
                     textBox3.Enabled = false;
                     Form2 newForm = new Form2();
-                    newForm.label1.Text = "Przejebales downie";
+                    newForm.label1.Text = "Niestety, przegrałeś!";
                     newForm.pictureBox1.Image = pictureBox1.Image;
                     newForm.pictureBox2.Image = pictureBox2.Image;
                     newForm.pictureBox3.Image = pictureBox3.Image;
@@ -110,12 +112,11 @@ namespace WindowsFormsApp1
                     button2.Enabled = false;
                     textBox3.Enabled = false;
                     label4.ForeColor = Color.Green;
-                    //label4.Text = "Trafiłeś";
+                    label4.Text = "Trafiłeś";
                     timer1.Enabled = false;
-                    //label5.Text = "Gra zakończona ! ";
 
                     Form2 newForm = new Form2();
-                    newForm.label1.Text = "Wygrałeś downie";
+                    newForm.label1.Text = "Gratulacje, wygrałeś!";
                     newForm.BackColor = Color.Green;
                     newForm.pictureBox1.Image = pictureBox1.Image;
                     newForm.pictureBox2.Image = pictureBox2.Image;
@@ -139,6 +140,8 @@ namespace WindowsFormsApp1
                 proby++;
                 label8.Text = "Liczba prób : " + proby.ToString();
 
+                textBox3.Focus();
+
             } catch
             {
                 MessageBox.Show("Nieprawidłowe liczby !");
@@ -159,6 +162,28 @@ namespace WindowsFormsApp1
             {
                 button2_Click(sender, e);
             }
+        }
+        
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(sender, e);
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(sender, e);
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)

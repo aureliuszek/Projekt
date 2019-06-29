@@ -98,8 +98,5 @@
   <ItemGroup>
     <None Include="Resources\hp-none.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\391684_large.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
